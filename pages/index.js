@@ -42,8 +42,8 @@ export default function Home() {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <label>
-        Insira aqui o CNPJ e clique em 'enviar':
-        <input type="text" class="pega-aqui-gabreu" {...register("cnpj")} onBlur={checkCNPJ} />
+        Insira aqui o CNPJ e clique em Enviar:
+        <input type="text" className="pega-aqui" {...register("cnpj")} onBlur={checkCNPJ} />
       </label>
       <label>
         Razão Social:
@@ -79,7 +79,7 @@ export default function Home() {
       </label>
       <label>
         Situação:
-        <input type="text" class="ativo-ou-nao-aqui-gabreu" {...register("situation")} />
+        <input type="text" className="ativo-ou-nao-aqui" {...register("situation")} />
       </label>
       <label>
         CNAEs:
@@ -93,7 +93,7 @@ export default function Home() {
             : "-"}
         </div>
       </label>
-      <button type="submit" class="clica-aqui-gabreu">Enviar</button>
+      <button type="submit" class="clica-aqui">Enviar</button>
     </form>
   );
 }
