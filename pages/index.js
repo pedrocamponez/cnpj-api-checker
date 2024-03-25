@@ -93,7 +93,7 @@ export default function Home() {
             : "-"}
         </div>
       </label>
-      <button type="submit" class="clica-aqui">Enviar</button>
+      <button type="submit" className="clica-aqui">Enviar</button>
     </form>
   );
 }
