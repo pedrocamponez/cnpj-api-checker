@@ -18,7 +18,7 @@ export default function Home() {
       return;
     }
     const cnpj = e.target.value.replace(/[^\d]+/g, "");
-    fetch(`http://localhost:3000/api/cnpj?cnpj=${cnpj}`)
+    fetch(`https://cnpj-api-checker.vercel.app/api/cnpj?cnpj=${cnpj}`)
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
